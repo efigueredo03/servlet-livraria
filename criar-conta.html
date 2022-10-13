@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <meta charset="UTF-8">
+        <title>Novo usuário | Livraria</title>
+    </head>
+    <body class="body__cadastro">
+        <div class="main-cadastro">
+            <div class="box">
+                <h1 class="box__titulo">Cadastrar novo usuário</h1>
+                <div class="box__entry">
+                    <label for="nome">Nome</label>
+                    <input name="nome" type="text" required>
+                </div>
+                <div class="box__entry">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input name="sobrenome" type="text">
+                </div>
+                <div class="box__entry">
+                    <label for="data">Data de nascimento</label>
+                    <input name="data" type="date" required>
+                </div>
+                <div class="box__entry--sexo">
+                    <label for="sexo">Sexo</label>
+                    <select name="sexo">
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                    </select>
+                </div>
+                <div class="box__entry">
+                    <label for="email">E-mail</label>
+                    <input name="email" type="email" required>
+                </div>
+                <div class="box__entry">
+                    <label for="usuario">Usuário</label>
+                    <input name="usuario" type="text" required>
+                </div>
+                <div class="box__entry">
+                    <label for="senha">Senha</label>
+                    <input name="senha" type="password" required>
+                </div>
+                <input class="box__button" type="submit" value="Cadastrar">
+                <input class="box__button" type="button" value="Cancelar">
+            </div>
+        </div>
+    </body>
+</html>

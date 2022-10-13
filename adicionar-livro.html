@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <title>Novo livro</title>
+    </head>
+    <body class="body__dash">
+        <header class="adm">
+            
+            <nav class="adm__navigation"> 
+                <div class="option-dash">
+                    <a href="dashboard-adm.html">Dashboard</a>
+                </div>
+                <div class="adm__navigation--option">
+                    <div class="option-show--user">
+                        <p>Usuários</p>
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                        </span>
+                    </div>
+                    <div class="option-hidden--user">
+                        <a href="">Mostrar</a>
+                        <a href="">Adicionar</a>
+                        <a href="">Remover</a> 
+                    </div>
+                </div>
+                <div class="adm__navigation--option">
+                    <div class="option-show--book">
+                        <p>Livros</p>
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                        </span>
+                    </div>
+                    <div class="option-hidden--book">
+                        <a href="">Mostrar</a>
+                        <a href="">Adicionar</a>
+                        <a href="">Remover</a> 
+                    </div>
+                </div>
+            </nav>
+            <div class="box__user">
+                <div class="box__user--main">
+                    <div class="box__user--name">
+                        <p>Emanoel</p>
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                        </span>
+                    </div>
+                    <div class="box__user--options">
+                        <a href="">Perfil</a>
+                        <a href="">Sair</a>
+                    </div>
+                </div>
+                
+                <img src="assets/img/user.png" alt="Imagem usuário">
+            </div>
+        </header>
+
+
+
+        <main class="main_dash-adicionar">
+            <section class="main-adicionar-livro-ativo">
+                <div class="adicionar-livro__box">
+                    <h1>Adicionar novo livro</h1>
+                    <div>
+                        <form class="forms-add-livro" action="">
+                            <div class="adicionar-livro--entry">
+                                <label for="titulo">Título</label>
+                                <input  oninput="firstname(this)" type="text" name="titulo" required>
+                            </div>
+                            <div class="adicionar-livro--select">
+                                <label for="categoria">Categoria</label>
+                                <select name="categoria">
+                                    <option value="aventura">Aventura</option>
+                                    <option value="romance">Românce</option>
+                                    <option value="terror">Terror</option>
+                                    <option value="contos">Contos</option>
+                                    <option value="desenvolvimento">Desenvolvimento pessoal</option>
+                                    <option value="nacionaris">Nacionais</option>
+                                    <option value="historia">História</option>
+                                    <option value="religiao">Religião</option><option value="aventura">Aventura</option>
+                                    <option value="culinaria">Culinária</option>
+                                    <option value="manga">Mangás</option>
+                                    <option value="hq">HQ's</option>
+                                </select>
+                            </div>
+                            <div class="adicionar-livro--valor">
+                                <label for="valor">Valor</label>
+                                <input oninput="secundname(this)" type="text" name="valor" required>
+                            </div>
+                            <div class="adicionar-livro--radio">
+                                <label for="topico">Tópico</label><br>
+                                <div class="radio">
+                                    <input type="radio" name="topico" value="promocoes" required>
+                                    <label for="promocoes">Promoções</label>
+                                    <input type="radio" name="topico" value="destaques required>
+                                    <label for="destaques">Destaques</label>
+                                    <input type="radio" name="topico" value="lancamentos" required>
+                                    <label for="lancamentos">Lançamentos</label>
+                                    <input type="radio" name="topico" value="box" required>
+                                    <label for="box">Box</label>
+                                    <input type="radio" name="topico" value="nenhuma" required>
+                                    <label for="nenhuma">Nenhuma</label>
+                                </div>
+                               </div>
+                            <div class="adicionar-livro--img">
+		<p>Imagem</p>
+                                <p class="tamanho-img">Tamanho sugerido<br>Largura: 170px - Altura: 245px</p>
+                                <label class="picture">
+                                    <input type="file" accept="image/*" class="picture__input" />
+                                    <span class="picture__image"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+	<div class="box-livros-main">
+		<h1>Preview</h1>
+                    <div class="box-livros-main__tabela-preview">
+                        <div class="box-livros__cartao">
+                            <h3 id="titulo">Título</h3>
+		<div class="img-preview">
+                            		<span class="picture__image-preview"></span>
+		</div>
+                            <p id="valor">Valor</p>
+                            <button>QUERO ESSE</button>
+                        </div>
+                    </div>
+		<input class="botao-adicionar" type="submit" value="Adicionar livro">
+                </div>
+            </section>
+        </main>
+	
+	<footer>
+		<img class="footer-logo" src="assets/img/logo_livraria.png">
+	</footer>
+
+    </body>
+    <script src="script_adicionar.js"></script>
+</html>

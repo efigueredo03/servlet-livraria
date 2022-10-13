@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <title>Buscar usuários</title>
+    </head>
+    <body class="body__dash">
+        <header class="adm">
+            
+            <nav class="adm__navigation"> 
+                <div class="option-dash">
+                    <a href="dashboard-adm.html">Dashboard</a>
+                </div>
+                <div class="adm__navigation--option">
+                    <div class="option-show--user">
+                        <p>Usuários</p>
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                        </span>
+                    </div>
+                    <div class="option-hidden--user">
+                        <a href="">Mostrar</a>
+                        <a href="">Adicionar</a>
+                        <a href="">Remover</a> 
+                    </div>
+                </div>
+                <div class="adm__navigation--option">
+                    <div class="option-show--book">
+                        <p>Livros</p>
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                        </span>
+                    </div>
+                    <div class="option-hidden--book">
+                        <a href="">Mostrar</a>
+                        <a href="">Adicionar</a>
+                        <a href="">Remover</a> 
+                    </div>
+                </div>
+            </nav>
+            <div class="box__user">
+                <div class="box__user--main">
+                    <div class="box__user--name">
+                        <p>Emanoel</p>
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                        </span>
+                    </div>
+                    <div class="box__user--options">
+                        <a href="">Perfil</a>
+                        <a href="">Sair</a>
+                    </div>
+                </div>
+                
+                <img src="assets/img/user.png" alt="Imagem usuário">
+            </div>
+        </header>
+	<main class="main-pequisar">
+
+		<section class="pesquisa">
+			<h1>Pesquisar usuário</h1>	
+			<form class="mostrar-livros__procurar--titulo mostrar-pessas-form">
+				<div class="entry-pessoas">
+					<label "for="pesquisar-nome">Nome</label>
+					<input type="text" name="pesquisar-nome" >
+				</div>				
+
+				<div class="entry-pessoas">
+					<label "for="pesquisar-sobrenome">Sobrenome</label>
+					<input type="text" name="pesquisar-sobrenome" >
+				</div>
+
+				<div class="entry-pessoas">
+					<label "for="pesquisar-usuario">Usuário</label>
+					<input type="text" name="pesquisar-usuario" >
+				</div>
+				<div class="entry-pessoas">
+					<label "for="pesquisar-senha">Senha</label>
+					<input type="text" name="pesquisar-senha" >
+				</div>
+				<div class="entry-pessoas">
+					<label for="quantidade">Quantidade de resultados</label>
+					<select name="quantidade">
+                                    				<option value="todos">Todos</option>
+                                    				<option value="5">5</option>
+                                    				<option value="10">10</option>
+                                   				 <option value="20">20</option>
+                                    				<option value="50">50</option>
+                                    				<option value="100">100</option>
+						<option value="200">200</option>
+                                			</select>
+				</div>
+				<div class="entry-pessoas">
+					<label for="sexo">Sexo</label>
+					<select name="sexo">
+                                    				<option value="todos">Todos</option>
+                                    				<option value="masculino">Masculino</option>
+                                   				 <option value="feminino">Feminino</option>
+                                			</select>
+				</div>
+				<div class="entry-pessoas entry-pessoas-email">
+					<label "for="pesquisar-email">E-mail</label>
+					<input type="text" name="pesquisar-email" >
+				</div>
+				<input id="botao-filtrar-livros" type="submit" value="Buscar">
+			</form>
+		</section>
+		<section class="show-dados">
+			<table class="tabela-pessoas">
+				<thead>
+					<tr>
+            						<th class="column-id">ID</th>
+            						<th class="column-tipo">Tipo</th>
+            						<th class="column-nome">Nome</th>
+            						<th class="column-sobrenome">Sobrenome</th>
+            						<th class="column-usuario">Usuário</th>
+						<th class="column-senha">Senha</th>
+            						<th class="column-email">E-mail</th>
+            						<th class="column-data">Nascimento</th>
+            						<th class="column-sexo">Sexo</th>
+					</tr>
+         				</thead>
+         				<tbody>
+					<tr>
+           						 <td>01</td>
+           						 <td>Administrador</td>
+           						 <td>Emanoel</td>
+           					 	 <td>Figuerêdo</td>
+           						 <td>efigueredo</td>
+           					 	 <td>wall2003</td>
+           						 <td>emanoelfigueredo2003@gmail.com</td>
+           					 	 <td>28/06/2003</td>
+           					 	 <td>Masculino</td>
+						 <td class="table-button"><button>Editar</button></td>
+						 <td class="table-button"><button>Remover</button></td>
+					</tr>
+         				</tbody>
+			</table>
+		</section>
+	</main>
+
+
+	
+	<footer>
+		<img class="footer-logo" src="assets/img/logo_livraria.png">
+	</footer>
+	</body>
+    <script src="script_adicionar.js"></script>
+</html>
